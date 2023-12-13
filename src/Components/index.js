@@ -1,15 +1,17 @@
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
+import { render } from "./components/card.js";
+import { filterAds } from "./sampledata.js";
 
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+const renderAll = (text = "") => {
+    const target = document.getElementById("ads");
+    target.innerHTML = '';
+
+    filterAds(text).forEach(ad => {
+        render({ target, ...ad });
+    });
+}
+
+renderAll();
+document.getElementById("search").addEventListener('keyup', (e) => {
+    renderAll(e.target.value);
+});
