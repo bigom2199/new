@@ -1,5 +1,4 @@
-
-import { render } from "./components/card.js";
+import {render} from "./components/card.js";
 import { filterAds } from "./sampledata.js";
 
 const renderAll = (text = "") => {

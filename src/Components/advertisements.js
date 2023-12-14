@@ -39,15 +39,19 @@ const advertisementsData = [
 
     
 ]
-       
+          /**
+           * 
+           * @param { string} text - Text to besearched
+           * @returns 
+           */
 
-        const  filterAds = (text = "") => {
+           export  const  filterAds = (text = "") => {
             const textTrimmed = text.trim().toLowerCase();
             return advertisementsData.filter(ad => ad.title.toLowerCase().includes(textTrimmed
-    ))
+    ));
               }
 
-  export default advertisementsData;
+  
 
 
 
