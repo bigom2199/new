@@ -20,8 +20,8 @@ const  render = ({target,title,image,contact,description}) => {
     const cardText = createElementHelper('p',description,['card-text']);
     cardBodyDiv.appendChild(cardText);
     
-    const cardButton = createElementHelper('button', 'details', ['btn', 'btn-info', 'shadow', 'w-100']);
-          const contactDetails = createElementHelper  ('p','contact: ',['card-trxt']);       
+    const cardButton = createElementHelper('button', 'Details', ['btn', 'btn-info', 'shadow', 'w-100']);
+          const contactDetails = createElementHelper  ('p','contact:*** ',['card-trxt']);       
         
 
     contactDetails.addEventListener('click', (e) => {
