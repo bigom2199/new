@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @param {*} type 
+ * @param {*} innerText 
+ * @param {*} classList 
+ * @returns 
+ */
  const createElementHelper = (type, innerText = "", classList = []) => {
     const elem = document.createElement(type);
     elem.innerText = innerText;
@@ -6,4 +12,3 @@
 
     return elem;
 }
-export default  DocumentVisibilityState;
