@@ -1,14 +1,12 @@
-
-import {render} from "./src/card.js";
-import { filterAds } from "./sampledata.js";
+import React from './Components';
 
 const renderAll = (text = "") => {
     const target = document.getElementById("ads");
     target.innerHTML = '';
 
-    filterAds(text).forEach(ad => {
+    /*filterAds(text).forEach(ad => {
         render({ target, ...ad });
-    });
+    });*/
 }
 
 renderAll();

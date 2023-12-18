@@ -1,4 +1,4 @@
-import{createElementHelper, react} from"./domutils.js";
+import{createElementHelper, react} from"./model.js";
 
 
 const  render = ({target,title,image,contact,description}) => {
